@@ -1,0 +1,138 @@
+
+html, body
+  -moz-user-select: none
+  -webkit-user-select: none
+
+section.calendar-container
+  border: 1px solid #eeeeee
+  padding: 0.5em
+  float: left
+  width: 18.625em
+
+div.top-bar
+  padding: 0.5em
+  width: 17.5em
+  text-align: center
+
+div.calendar-title
+  width: calc(100% - 6em)
+  float: left
+  line-height: 2em
+
+div#prev-month, div#next-month
+  width: 2em
+  line-height: 2em
+  margin: 0.25em
+
+div#prev-month:hover, div#next-month:hover
+  color: #a91615
+  cursor: pointer
+
+div#prev-month
+  float: left
+
+div#next-month
+  float: right
+
+div.days-of-week, div.dates
+  padding: 0.5em
+  float: left
+  width: 17.5em
+  margin: 0
+
+div.date
+  width: 2em
+  line-height: 2em
+  background-color: #9c9bf6
+  text-align: center
+  margin: 0.25em
+  float: left
+
+div.date.current
+  background-color: #b9c3ed
+
+div.date.prev-month, div.date.next-month
+  background-color: #d1d1d1
+  color: #5b5b5b
+
+div.date.prev-month:hover, div.date.current:hover, div.date.next-month:hover
+  background-color: #777
+  color: white
+  transition: all 250ms ease
+  cursor: pointer
+
+div.date.selected
+  background-color: rgba(184, 134, 11, 0.46)
+
+/************** End of calendar section **************/
+
+section.calendar-tasks
+  width: calc(100% - (18.625em + 1.5em))
+  background-color: rgba(207, 250, 255, 0.38)
+  float: left
+
+section.calendar-tasks > h1
+  text-align: center
+  color: rgba(100, 149, 237, 0.68)
+  margin: 2em
+
+section.calendar-tasks > div.time-stamp
+  width: 15%
+  line-height: 2em
+  color: rgba(100, 149, 237, 0.68)
+  border: 1px solid #aaaaaa
+  margin-top: -1px
+  margin-right: -1px
+  text-align: center
+  float: left
+
+section.calendar-tasks > div.time-task
+  width: 84.5%
+  border: 1px solid #aaaaaa
+  margin-top: -1px
+  line-height: 2em
+  float: left
+
+section.calendar-tasks > div.time-task.selected, div.time-stamp.selected
+  background-color: rgba(162, 162, 162, 0.48)
+
+/*************** End of calendar tasks section ***********/
+section.task-ui-form
+  width: 40%
+  background-color: rgb(180, 183, 237)
+  position: fixed
+  top: 25%
+  left: 40%
+
+  display: none
+
+section.task-ui-form > div, input
+  line-height: 2em
+  margin: 1em
+
+  width: 90%
+
+div#task-create, div#task-cancel
+  line-height: 2em
+  text-align: center
+  width: 20%
+  float: left
+  border-radius: 1em
+  background-color: rgba(73, 73, 73, 0.25)
+  color: #21217e
+  margin: 1em
+
+div#task-create:hover, div#task-cancel:hover
+  background-color: rgba(73, 73, 73, 0.55)
+  cursor: pointer
+
+div.unavailable-time
+  background-color: rgb(195, 195, 195)
+  color: #e3e3e3
+  text-align: center
+  font-size: 1em
+  line-height: 2em
+  position: absolute
+
+  border: 1px solid #aaaaaa
+  margin-top: -1px
